@@ -1,0 +1,15 @@
+super-user admin\
+Shubham-21BCE10583
+
+###   to-do   ###
+#suggest outfit with same formality instead of random choices
+#login-password must be same for both password and password 2 (keyvalue error )
+#update and delete request ,wardrobeupload 
+.want the ai to get random prompts from user and give the outfit accordingly
+.want the outfit to be tried in 3d view on a sample ai body
+.add the user profile and add firstname, lastname, age, username, phone and setup admin-user permisions
+.i want a different api for my app in which user can scan their wardrobe and upload it with the clothes inside and the ai model gives suitable outfits accordingly according to the prompt 
+.there should be a single search bar on the front page for giving promts to ai
+.i want my api to connect with chatgpt and work as required for a wardrobe app
+.while registering, if the user name and email has been used before then show message 'user already registered'
+.take request in encrypted form from user and give it back to them in encrypted form
