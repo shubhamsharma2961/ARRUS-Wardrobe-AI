@@ -43,7 +43,7 @@ python -m venv venv
 .\venv\Scripts\Activate.ps1
 
 # (On Linux/macOS)
-# source venv/bin/activate
+ source venv/bin/activate
 3. Installing Dependencies
 Install all necessary Python packages. (If your list of files contains a requirements.txt, use that. Otherwise, you'll need to create one first.)
 Bash
@@ -80,19 +80,19 @@ The application should now be running at http://127.0.0.1:8000/. You can access 
 🗂️ Project Structure
 The codebase is organized to clearly separate the Django backend, ML models, and utility scripts:
 ARRUS-Wardrobe-AI/
-├── wardrobe_ai/              
-│   ├── settings.py         
-│   └── urls.py              
-├── <django_app_name>/        
-│   ├── models/               
-│   ├── views/               
-│   └── ml_module/           
-│       ├── models/          
-│       ├── image_processor.py 
-│       └── outfit_generator.py 
-├── .gitignore               
-├── manage.py              
-└── README.md             
+├── wardrobe_ai/              # Main Django Project folder
+│   ├── settings.py           # Database and core configuration
+│   └── urls.py               # Main URL router
+├── <django_app_name>/        # Your primary Django application 
+│   ├── models/               # Database models (wardrobe items, users, etc.)
+│   ├── views/                # API and request handlers
+│   └── ml_module/            # Integrated Machine Learning scripts
+│       ├── models/           # Stores pre-trained TensorFlow/PyTorch model files (.pth, .h5)
+│       ├── image_processor.py # OpenCV and NumPy/Pandas logic for image analysis
+│       └── outfit_generator.py # Recommendation logic
+├── .gitignore                # Files/folders ignored by Git (e.g., venv, logs, media files)
+├── manage.py                 # Django command-line utility
+└── README.md                 # This file
 🤝 Contributing
 We welcome contributions! Please refer to the guidelines in the [CONTRIBUTING.md] file (you should create this if you plan to accept contributions).
 1.	Fork the Project
